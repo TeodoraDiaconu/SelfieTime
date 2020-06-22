@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Selfie Time 3.7 </title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <fieldset>
+    <legend> Facial Recognition Software </legend>
+  <form>
+    <div class="progress-bar">Loading Model</div>
+    <h1> Selfie Time </h1>
+    <ol id="prediction"></ol>
+    <img id="selected-image" src=""/>
+    <input id="image-selector" class="form-control" type="file">
+    <input id="button" type="submit">
+  </form>
+</fieldset>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="my_classes.js"></script>
+<script src="selfie.js"></script>
+</body>
+</html>
