@@ -43,9 +43,8 @@ let top = Array.from(predictions)
         };
     }).sort(function(a,b){
         return b.probability - a.probability;
-    }).slice(0,4);
+    }).slice(0,1);
 
 $("#prediction").empty();
-top.forEach(function (p){
-    $('#prediction').append(`<li>${p.className}: ${p.probability.toFixed(6)}</li>`);
-});
+
+$('#prediction').append(`<li>${top.className}: ${top.probability.toFixed(6)}</li>`);
